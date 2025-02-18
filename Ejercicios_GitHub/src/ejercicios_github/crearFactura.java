@@ -8,6 +8,7 @@ public class crearFactura {
     String nombre,producto;
     int cantidad_productos, precioProducto, precioTotal;
     boolean esEstudiante;
+    double impuesto, conImpuesto;
     
     public void tomarDatos(){
         
@@ -41,20 +42,20 @@ public class crearFactura {
         esEstudiante = sc.nextBoolean();
         
         if (esEstudiante){
-            double impuesto;
             impuesto = precioTotal * (0.5/100);
             System.out.println("el impuesto es: " + impuesto);
             
         } else {
-            double impuesto;
+           
             impuesto = precioTotal * (0.13/100);
             System.out.println("el impuesto es: " + impuesto);
         }
         
         
-        
-        System.out.println("el total es: " + esEstudiante);
-       
+        conImpuesto = precioTotal + impuesto;
+        System.out.println("el total es: " + conImpuesto);
+        System.out.println("      fin de ejercicio 1    ");
+        System.out.println("----------------------------");
         
     }
 }

@@ -26,6 +26,8 @@ public class Condicional1 {
     
     public void Agradecimeinto(){
         System.out.println("Gracias por usar nuestros servicios");
+        System.out.println("      fin de ejercicio 2    ");
+        System.out.println("----------------------------");
     }
     
    
