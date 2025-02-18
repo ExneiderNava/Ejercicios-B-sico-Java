@@ -13,26 +13,23 @@ public class Condicional4 {
         temperaturaAmbiente = sc.nextDouble();
     }
     
-    public boolean verificarTemperatura(){
+    public void verificarTemperatura(){
         
         if(temperaturaAmbiente >= umbralAlerta){
             System.out.println("ALERTA!!!!! PELIGRO !!!!!");
-            return true;
+            System.out.println("Esto es una emergencia por favor busca refugio");
+            
         } else {
             System.out.println("la temperatura es normal");
-            return false;
+            System.out.println("Gracias por usar nuestros servicios");
+           
         }
     }
     
     public void Finalizar(){
         
-        boolean emergencia = verificarTemperatura();
         
-        if(emergencia){
-            System.out.println("Esto es una emergencia por favor busca refugio");
-        } else {
-            System.out.println("Gracias por usar nuestros servicios");
-        }
+       
         System.out.println("      fin de ejercicio 5    ");
         System.out.println("----------------------------");
         
