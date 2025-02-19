@@ -20,7 +20,10 @@ public class Ejercicios_GitHub {
         System.out.println("6. Ejercicio condicional 5");
         System.out.println("7. Ejercicio Switch 1");
         System.out.println("8. Ejercicio Switch 2");
-        System.out.println("9. Salir");
+        System.out.println("9. Ejercicio Switch 3");
+        System.out.println("10. Ejercicio Switch 4");
+        System.out.println("11. Ejercicio Switch 5");
+        System.out.println("12. Salir");
         
         opcion = sc.nextInt();
          crearFactura GenerarFactura = new crearFactura();
@@ -31,6 +34,9 @@ public class Ejercicios_GitHub {
          Condicional5 Ascensor = new Condicional5();
          Switch1 Alimentos = new Switch1();
          Switch2 IMC = new Switch2();
+         Switch3 peliculas = new Switch3();
+         Switch4 partido = new Switch4();
+         Switch5 menu = new Switch5();
          
         switch (opcion){
             case 1:
@@ -72,13 +78,28 @@ public class Ejercicios_GitHub {
                 IMC.operacion();
                 IMC.finalizar();
             case 9:
+                peliculas.SolicitarInfo();
+                peliculas.recomendacion();
+                peliculas.finalizar();
+            case 10:
+                partido.ingresar();
+                partido.resultados();
+                partido.finalizar();
+            case 11:
+                menu.menú();
+                menu.metodoPago();
+                menu.pedidoPlato();
+                menu.pedidoBebida();
+                menu.operacion();
+                menu.finalizar();
+            case 12:
                 System.out.println("deteniendo programa");
                 break;
             default:
                 System.out.println("opcion invalida");
                 break;
         }
-     } while (opcion != 9);
+     } while (opcion != 12);
      
      sc.close();
    
