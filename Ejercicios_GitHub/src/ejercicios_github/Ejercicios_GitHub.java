@@ -23,7 +23,9 @@ public class Ejercicios_GitHub {
         System.out.println("9. Ejercicio Switch 3");
         System.out.println("10. Ejercicio Switch 4");
         System.out.println("11. Ejercicio Switch 5");
-        System.out.println("12. Salir");
+        System.out.println("12. Ejercicio while 1");
+        System.out.println("13. Ejercicio while 2");
+        System.out.println("14. Salir");
         
         opcion = sc.nextInt();
          crearFactura GenerarFactura = new crearFactura();
@@ -37,6 +39,8 @@ public class Ejercicios_GitHub {
          Switch3 peliculas = new Switch3();
          Switch4 partido = new Switch4();
          Switch5 menu = new Switch5();
+         While1 cajero = new While1();
+         While2 tienda = new While2();
          
         switch (opcion){
             case 1:
@@ -93,13 +97,21 @@ public class Ejercicios_GitHub {
                 menu.operacion();
                 menu.finalizar();
             case 12:
+                cajero.retirar();
+                cajero.operacion();
+                cajero.finalizar();
+            case 13:
+                tienda.ingresarDatos();
+                tienda.bluce();
+                tienda.finalizar();
+            case 14:
                 System.out.println("deteniendo programa");
                 break;
             default:
                 System.out.println("opcion invalida");
                 break;
         }
-     } while (opcion != 12);
+     } while (opcion != 14);
      
      sc.close();
    
